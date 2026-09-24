@@ -1,0 +1,68 @@
+.calc-container {
+  width: 280px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #222;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.calc-display {
+  background: #111;
+  color: #0f0;
+  font-size: 1.8rem;
+  padding: 15px;
+  text-align: right;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  overflow-x: auto;
+  letter-spacing: 2px;
+}
+
+.calc-keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.calc-keypad button {
+  padding: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background: #444;
+  color: white;
+  transition: background 0.2s;
+}
+
+.calc-keypad button:hover {
+  background: #555;
+}
+
+.calc-keypad button.op {
+  background: #ff9500;
+}
+
+.calc-keypad button.op:hover {
+  background: #e08500;
+}
+
+.calc-keypad button.clear {
+  background: #d32f2f;
+}
+
+.calc-keypad button.clear:hover {
+  background: #b71c1c;
+}
+
+.calc-keypad button.equals {
+  background: #34c759;
+}
+
+.calc-keypad button.equals:hover {
+  background: #28a745;
+}
